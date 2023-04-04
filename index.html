@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <title>TEMID</title>
 </head>
+
 <body>
+  <!-- Esto es el header -->
   <header>
-    <h1 #titulo></h1>
-    <section>
-      <nav>
-        <img class="logo" src="imagenes/Logo.jpg">
-      </nav>
-      <a href="HOME"> HOME</a>
-      <a href="NOSOTRxS">NOSOTRxS</a>
-      <a href="CURSOS">CURSOS</a>
-      <a href="CONTACTANOS">CONTACTANOS</a>
+    <section class="seccion-navegador">
+      <img class="logo" src="imagenes/Logo.jpg">
+      <nav class="navegador">
+      <a href="HOME"> Home</a>
+      <a href="NOSOTRxS">Nosotrxs</a>
+      <a href="CURSOS">Cursos</a>
+      <a href="CONTACTANOS">Contactanos</a>
+    </nav>
     </section>
-    <article>
-      <img src="imagenes/Carrusel1.JPG">
-    </article>
+    <div>
+      <img class="foto-hero" src="imagenes/Carrusel1.JPG">
+    </div>
   </header>
+  <!-- Fin del header -->
+
+  <!-- Esto es el Main -->
 <main>
-  <div class="titulotemid">
-    <h1>
+  <div class="contenedor-info-temid">
+    <h1 class="titulotemid">
       TEMID
     </h1>
     <p>
@@ -35,55 +39,18 @@
       Sapiente est assumenda ipsa odio.
     <p>
   </div>
-  <div class="nosotros">
+  
+  <div>
     <h2>
       NOSOTRxS
     </h2>
-    <img src="imagenes/Integrante1.jpg">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Possimus itaque excepturi tempora dignissimos fugiat velit deleniti quidem ab, 
-      repellat autem sequi deserunt architecto hic? 
-      Enim odit at similique laudantium? Repellat.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Possimus itaque excepturi tempora dignissimos fugiat velit deleniti quidem ab, 
-      repellat autem sequi deserunt architecto hic? 
-      Enim odit at similique laudantium? Repellat.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Possimus itaque excepturi tempora dignissimos fugiat velit deleniti quidem ab, 
-      repellat autem sequi deserunt architecto hic? 
-      Enim odit at similique laudantium? Repellat.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Possimus itaque excepturi tempora dignissimos fugiat velit deleniti quidem ab, 
-      repellat autem sequi deserunt architecto hic? 
-      Enim odit at similique laudantium? Repellat.
-    </p>
+    <div id="integrante" class="integrantes-card"></div>
   </div>
-  <div class="nosotros2">
-    <img src="imagenes/Integrante2.jpg">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Possimus itaque excepturi tempora dignissimos fugiat velit deleniti quidem ab, 
-      repellat autem sequi deserunt architecto hic? 
-      Enim odit at similique laudantium? Repellat.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Possimus itaque excepturi tempora dignissimos fugiat velit deleniti quidem ab, 
-      repellat autem sequi deserunt architecto hic? 
-      Enim odit at similique laudantium? Repellat.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Possimus itaque excepturi tempora dignissimos fugiat velit deleniti quidem ab, 
-      repellat autem sequi deserunt architecto hic? 
-      Enim odit at similique laudantium? Repellat.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-      Possimus itaque excepturi tempora dignissimos fugiat velit deleniti quidem ab, 
-      repellat autem sequi deserunt architecto hic? 
-      Enim odit at similique laudantium? Repellat.
-    </p>
-  </div>
+
   <section class="escuela">
-    <h1>
+    <h2>
       ESCUELA DE TECNICOS
-    </h1>
+    </h2>
     <p>CAPACITACION EN ILUMINACION</p>
     <p>CAPACITACION EN SONODIO EN VIVO</p>
     <p>CAPACITACION EN STAGE MANAGER</p>
@@ -92,26 +59,38 @@
     <p>MASTERCLASS EN SONIDO</p>
     <p>MASTERCLASS EN ILUMINACION</p>
     <img src="IMAGENES/Contratanos.jpg">
-    
   </section>
+
+</main>
+  <!-- Fin del main -->
+
+  <!-- Este es el formulario -->
   <div class="form">
     <section>
-      <form action="/formulario" method="post">
-        <label for="nombre">nombre y apellido</label>
-        <input id="nombre" name="nombre" placeholder="ingrese el nombre">
-      <br>
-        <label for="mail">mail</label>
-        <input value="mail" id="mail" name="mail" placeholder="ingrese mail">
-      <br>
-        <label for="direccion">direccion</label>
-        <input id="direccion name="direccion" placeholder="ingrese domicilio">
-      <br>
-        <label for="comentario">comentario</label>
-        <textarea rows="1" id="comentario" placeholder="ingrese comentario" name="comentario"> 
-        </textarea>
+        <form class="container" action="/formulario" method="post">
+          <H3>CONTACTANXS</H3>
+  
+          <label class="labels" for="nombre">Nombre</label>
+          <input class="inputs" type="text" id="nombre" >
+  
+          <label class="labels" for="email">Email</label>
+          <input class="inputs" type="text" id="email">
+  
+          <label class="labels" for="telefono">Telefono</label>
+          <input class="inputs" type="number" id="email">
+  
+          <label class="labels" for="msj">Dejanos tu mensaje</label>
+          <textarea class="textarea" id="mensaje"></textarea>
+  
+          <input class="boton" type="submit" value="Enviar">
+      </form>
     </section>  
   </div>
-</main>
+  <!-- Fin del formulario -->
+
+
+
+<!-- Este es el footer -->
 <footer>
   <div>
     <section>
@@ -124,6 +103,9 @@
       </p>
   </div>
 </footer>
+
+<!-- Aca van los script -->
+<script src="app.js"></script>
 
 </body>
 </html>
