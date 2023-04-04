@@ -1,0 +1,116 @@
+body{
+    background-color: black;
+    color:rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+header{
+    text-align: center;
+}
+header h1{
+    color: black;
+}
+
+header section nav{
+    margin: 100px 100px 0 250px;
+    padding: 0;
+    text-align: center;
+}
+
+header section a{
+    margin: -150px 200px 200px -50px;
+}
+.encabezado-img{
+    background-position: center;
+    background-size: cover;
+}
+header article{
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+display: inline-block;
+height: 10px;
+}
+section nav{
+    height: 10rem;
+    width: 1rem;
+    padding: 10px;
+    margin: 80px;
+}
+
+header a{
+    background-color: aliceblue;
+    padding: 2rem;
+    font-size: 100px;
+    font-family:'Courier New', Courier, monospace;
+}
+header section a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    margin: 50px 30px;
+    border-radius: 30px;
+}
+header section a:hover{
+    background-color:rgb(58, 226, 43);
+    transition: 1s;
+}
+.titulotemid h1{
+    color:rgb(49, 96, 57);
+    font-size: 200px;
+    text-align: center;
+
+}
+main p{
+    font-size: 80px;
+}
+
+.titulotemid p{
+    font-size: 80px;
+}
+.nosotros img{
+    height: 60rem;
+    width: 60rem;
+}
+.nosotros2 img{
+    height: 60rem;
+    width: 60rem;
+}
+.nosotros img p{
+    display: flex;
+}
+.escuela h1{
+    font-size: 100px;
+    text-align: center;
+}
+
+.nosotros{
+    display: inline-block;
+    text-align: center;
+}
+.nosotros h2{
+    font-size: 200px;
+    color:rgb(49, 96, 57);
+}
+.escuela img{
+    padding-left: 850px;
+    
+}
+section form{
+    font-size: 4rem;
+}
+div section{
+    text-align: center;
+}
+
+footer div section{
+    font-size: 100px;
+    background-color: aliceblue;
+}
+footer div{
+    display: inline-block;
+}
+footer p{
+    font-size: 100px;
+}
+
